@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ movie.title }}{% endblock %}
+
+{% block body %}
+<div class="content">
+<div class=item>
+
+  <div class="card mb-3">
+    <h3 class="card-header">{{ movie.title }}</h3>
+    <img src="{{ asset('brochures/')}}{{movie.image}}" alt="">
+    <a href="" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Modifier</a>
+  </div>
+  <div class="card-body">
+      <p class="card-text"><strong>Description :</strong> </p>
+      <p class="card-text"><strong>Note :</strong></p>
+      <p class="card-text"><strong>Date de sortie :</strong></p>
+  </div>
+
+</div>
+ 
+</div>
+
+
+{% endblock %}

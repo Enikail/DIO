@@ -1,0 +1,17 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}ajouter un film{% endblock %}
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+               {{ form_start(form) }}
+                {{ form_row(form , {'attr': {'class': 'form-control'}} )}}
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+                {{ form_end(form) }}
+            </div>
+         </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,7 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+autocomplete:
+    path: /autocomplete
+    controller: App\Controller\AutocompleteController::autocompleteAction

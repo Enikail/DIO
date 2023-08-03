@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center">Inscription</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" name="prenom" id="prenom" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" name="password" id="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password_confirmation">Confirmation du mot de passe</label>
+                            <input type="password" name="password_confirmation" id="password_confirmation"
+                                   class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+</section>
+{% endblock %}

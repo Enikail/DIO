@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <div class="container my-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 text-center">
+        <h1>Bienvenue sur notre vidéothèque</h1>
+        <p>Notre vidéothèque offre une large sélection de films et séries incroyables. Connectez-vous pour en savoir plus!</p>
+        <a href="{{ path('app_login') }}" class="btn-hm btn btn-primary btn-lg">Se connecter</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
